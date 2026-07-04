@@ -1,0 +1,228 @@
+.page {
+  background: var(--color-bg-main);
+  min-height: 100vh;
+}
+
+/* ─── PAGE HEADER ─────────────────────────────────────────────────────────── */
+.pageHeader {
+  background: var(--color-bg-main);
+  border-bottom: 1px solid var(--color-neutral-200);
+  padding: var(--space-16) var(--space-10);
+}
+
+.pageHeaderInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dsLabel {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-3);
+  line-height: 1.1;
+}
+
+.pageSubtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  max-width: 520px;
+  line-height: 1.65;
+  margin-bottom: var(--space-5);
+}
+
+.pageMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+/* ─── PAGE BODY ───────────────────────────────────────────────────────────── */
+.pageBody {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-10);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* ─── SECTION ─────────────────────────────────────────────────────────────── */
+.section {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.sectionHeader {
+  padding: var(--space-5) var(--space-8);
+  border-bottom: 1px solid var(--color-neutral-100);
+  background: var(--color-neutral-50);
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
+}
+
+.sectionDescription {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+  line-height: 1.5;
+}
+
+.sectionContent {
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+/* ─── GROUP ───────────────────────────────────────────────────────────────── */
+.group { display: flex; flex-direction: column; gap: var(--space-3); }
+
+.groupLabel {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+}
+
+.groupItems { display: flex; flex-direction: column; gap: var(--space-3); }
+.groupRow { flex-direction: row; flex-wrap: wrap; align-items: flex-start; }
+
+/* ─── COLOR SWATCHES ──────────────────────────────────────────────────────── */
+.swatchRow { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+
+.swatch { display: flex; flex-direction: column; gap: var(--space-1); width: 88px; }
+
+.swatchColor {
+  width: 88px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.swatchName { font-size: 0.75rem; font-weight: 500; color: var(--color-text-primary); line-height: 1.2; }
+.swatchValue { font-size: 0.6875rem; color: var(--color-text-muted); font-family: var(--font-mono); }
+
+/* ─── TYPOGRAPHY ──────────────────────────────────────────────────────────── */
+.typeScale { display: flex; flex-direction: column; }
+
+.typeRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-8);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-neutral-100);
+}
+.typeRow:last-child { border-bottom: none; }
+
+.typeLabel {
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  width: 220px;
+}
+
+/* ─── PRODUCT GRID ────────────────────────────────────────────────────────── */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 280px));
+  gap: var(--space-4);
+}
+
+/* ─── CART ────────────────────────────────────────────────────────────────── */
+.cartPreview { max-width: 540px; }
+
+/* ─── REVIEWS ─────────────────────────────────────────────────────────────── */
+.reviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 360px));
+  gap: var(--space-4);
+}
+
+/* ─── ALERTS ──────────────────────────────────────────────────────────────── */
+.alertList { display: flex; flex-direction: column; gap: var(--space-3); max-width: 640px; }
+
+/* ─── EDUCATION ───────────────────────────────────────────────────────────── */
+.educationList { display: flex; flex-direction: column; gap: var(--space-4); max-width: 640px; }
+
+/* ─── NAV PREVIEW ─────────────────────────────────────────────────────────── */
+.navPreview {
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.navPreviewMobile {
+  max-width: 390px;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+/* ─── FORMS ───────────────────────────────────────────────────────────────── */
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  max-width: 640px;
+}
+@media (max-width: 640px) { .formGrid { grid-template-columns: 1fr; } }
+
+/* ─── SPACING ─────────────────────────────────────────────────────────────── */
+.spacingScale { display: flex; flex-direction: column; gap: var(--space-3); }
+.spacingRow { display: flex; align-items: center; gap: var(--space-4); }
+.spacingKey { font-size: 0.75rem; font-family: var(--font-mono); color: var(--color-text-muted); width: 80px; flex-shrink: 0; }
+.spacingVal { font-size: 0.75rem; font-family: var(--font-mono); color: var(--color-text-muted); width: 40px; }
+
+/* ─── RADIUS ──────────────────────────────────────────────────────────────── */
+.radiusRow { display: flex; gap: var(--space-6); flex-wrap: wrap; align-items: flex-end; }
+.radiusSwatch { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); }
+.radiusBox { width: 60px; height: 60px; background: var(--color-primary-muted); border: 1.5px solid var(--color-primary-light); }
+.radiusLabel { font-size: 0.8125rem; font-weight: 600; color: var(--color-text-primary); }
+.radiusVal { font-size: 0.6875rem; font-family: var(--font-mono); color: var(--color-text-muted); }
+
+/* ─── SHADOWS ─────────────────────────────────────────────────────────────── */
+.shadowRow { display: flex; gap: var(--space-8); flex-wrap: wrap; align-items: flex-end; }
+.shadowSwatch { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); }
+.shadowBox { width: 100px; height: 60px; background: var(--color-bg-card); border-radius: var(--radius-lg); }
+.shadowLabel { font-size: 0.8125rem; color: var(--color-text-secondary); }
+
+/* ─── FOOTER ──────────────────────────────────────────────────────────────── */
+.footer {
+  border-top: 1px solid var(--color-neutral-200);
+  padding: var(--space-6) var(--space-10);
+  background: var(--color-bg-main);
+  margin-top: var(--space-6);
+}
+
+.footerInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}

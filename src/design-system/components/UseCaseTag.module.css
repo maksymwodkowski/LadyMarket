@@ -1,0 +1,31 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-neutral-200);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  background: var(--color-bg-card);
+  color: var(--color-text-secondary);
+}
+
+.icon { font-size: 0.875rem; line-height: 1; }
+
+.tag:hover {
+  background: var(--color-neutral-100);
+  color: var(--color-text-primary);
+  border-color: var(--color-neutral-300);
+}
+
+.active { font-weight: 600; }
+
+.medical.active   { background: var(--color-medical-muted); border-color: var(--color-medical-light); color: var(--color-medical); }
+.pregnancy.active { background: #FEF6EC; border-color: #E8C07A; color: #7A4E00; }
+.travel.active    { background: var(--color-secondary-muted); border-color: var(--color-secondary-light); color: var(--color-secondary); }
+.work.active      { background: var(--color-neutral-100); border-color: var(--color-neutral-300); color: var(--color-neutral-800); }
+.fashion.active   { background: var(--compression-iii-bg); border-color: var(--compression-iii-border); color: var(--compression-iii-text); }

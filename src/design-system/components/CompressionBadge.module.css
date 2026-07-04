@@ -1,0 +1,45 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid;
+  font-size: 0.8125rem;
+  font-family: var(--font-sans);
+  font-weight: 500;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.compact {
+  padding: 2px 10px;
+  font-size: 0.75rem;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.separator { color: var(--color-text-muted); font-weight: 400; }
+.classLabel { font-weight: 600; }
+
+.mmhg {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+}
+
+.plain { color: var(--color-text-muted); }
+
+.compressionI  { background: var(--compression-i-bg);   border-color: var(--compression-i-border);   color: var(--compression-i-text);   }
+.compressionI .dot { background: var(--compression-i-dot); }
+
+.compressionII { background: var(--compression-ii-bg);  border-color: var(--compression-ii-border);  color: var(--compression-ii-text);  }
+.compressionII .dot { background: var(--compression-ii-dot); }
+
+.compressionIII{ background: var(--compression-iii-bg); border-color: var(--compression-iii-border); color: var(--compression-iii-text); }
+.compressionIII .dot { background: var(--compression-iii-dot); }

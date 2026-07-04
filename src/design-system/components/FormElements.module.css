@@ -1,0 +1,71 @@
+.fieldWrap { display: flex; flex-direction: column; gap: var(--space-2); width: 100%; }
+.label    { color: var(--color-text-primary); }
+.helpText { color: var(--color-text-muted); }
+.errorText{ color: var(--color-error); }
+
+.inputWithUnit { position: relative; display: flex; align-items: center; }
+.inputWithUnit input { padding-right: 48px; }
+.unit { position: absolute; right: 14px; font-size: 0.875rem; font-weight: 500; color: var(--color-text-muted); pointer-events: none; }
+
+/* Size selector */
+.sizeGrid { display: flex; gap: var(--space-2); flex-wrap: wrap; }
+
+.sizeBtn {
+  width: 50px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-neutral-200);
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+.sizeBtn:hover:not(:disabled) { border-color: var(--color-primary); color: var(--color-primary); }
+.sizeBtnSelected { background: var(--color-primary); border-color: var(--color-primary); color: var(--color-text-on-dark); font-weight: 600; }
+.sizeBtnOos { opacity: 0.3; text-decoration: line-through; cursor: not-allowed; }
+
+/* Checkbox */
+.checkboxLabel { display: flex; align-items: center; gap: var(--space-2); cursor: pointer; user-select: none; }
+.checkboxLabel.disabled { opacity: 0.4; cursor: not-allowed; }
+.checkboxInput { position: absolute; opacity: 0; width: 0; height: 0; }
+
+.checkboxBox {
+  width: 17px;
+  height: 17px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-neutral-300);
+  background: var(--color-bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+.checkboxInput:checked + .checkboxBox { background: var(--color-primary); border-color: var(--color-primary); }
+.checkboxInput:focus-visible + .checkboxBox { box-shadow: var(--shadow-focus); }
+.checkboxText { font-size: 0.9375rem; color: var(--color-text-primary); }
+
+/* Radio */
+.radioGroup { display: flex; flex-direction: column; gap: var(--space-3); }
+.radioLabel { display: flex; align-items: center; gap: var(--space-2); cursor: pointer; user-select: none; }
+.radioInput { position: absolute; opacity: 0; width: 0; height: 0; }
+
+.radioCircle {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-neutral-300);
+  background: var(--color-bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+.radioInput:checked + .radioCircle { border-color: var(--color-primary); }
+.radioInput:focus-visible + .radioCircle { box-shadow: var(--shadow-focus); }
+.radioDot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-primary); }
+.radioText { font-size: 0.9375rem; color: var(--color-text-primary); }

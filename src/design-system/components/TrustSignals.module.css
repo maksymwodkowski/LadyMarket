@@ -1,0 +1,66 @@
+.certBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-medical-muted);
+  border: 1px solid var(--color-medical-light);
+  border-radius: var(--radius-xl);
+}
+
+.certIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-medical-light);
+  border: 1.5px solid var(--color-medical);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-medical);
+  flex-shrink: 0;
+}
+
+.certText { font-size: 0.9375rem; font-weight: 600; color: var(--color-text-primary); }
+.certSubtext { font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 2px; }
+
+/* Stars */
+.starRow { display: flex; align-items: center; gap: var(--space-2); }
+.stars { display: flex; gap: 2px; }
+.star { width: 15px; height: 15px; }
+.ratingValue { font-size: 0.9375rem; font-weight: 600; color: var(--color-text-primary); }
+.reviewCount { font-size: 0.875rem; color: var(--color-text-muted); }
+
+/* Review card */
+.reviewCard {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-subtle);
+  max-width: 360px;
+}
+
+.reviewTop { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-2); }
+.reviewMeta { display: flex; flex-direction: column; gap: var(--space-1); }
+
+.authorName { font-size: 0.9375rem; font-weight: 600; color: var(--color-text-primary); }
+
+.verifiedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-success);
+  background: var(--color-success-light);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.reviewDate { font-size: 0.8125rem; color: var(--color-text-muted); flex-shrink: 0; }
+.reviewText { font-size: 0.9375rem; color: var(--color-text-secondary); line-height: 1.6; }
+.reviewUseCase { margin-top: var(--space-1); }
