@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { HashRouter as BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import './design-system/design-system.css';
 import { DesignSystemPage } from './design-system/DesignSystemPage';
 import { AnionProgramPage } from './pages/AnionProgramPage';
