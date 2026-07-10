@@ -6,26 +6,26 @@
 // ─── COLORS ──────────────────────────────────────────────────────────────────
 
 export const colors = {
-  // Brand — dark forest teal (Perplexity-style deep ink)
+  // Brand — dark forest teal
   primary:       '#1B3A38',
   primaryLight:  '#3D5B58',
-  primaryMuted:  '#D6E4E1',   // sage tint — used for highlighted cards
+  primaryMuted:  '#D6E4E1',
 
   // Secondary — muted blue-steel
   secondary:      '#4A7A8A',
   secondaryLight: '#A8CEDA',
   secondaryMuted: '#E6F2F5',
 
-  // Neutral scale — warm-toned (cream-adjacent, not cool gray)
-  neutral50:  '#F5F0E8',   // page background (cream)
-  neutral100: '#EDE8DF',   // subtle cream
-  neutral200: '#DDD8CE',   // borders, dividers
+  // Neutral scale — warm-toned (cream-adjacent)
+  neutral50:  '#F5F0E8',
+  neutral100: '#EDE8DF',
+  neutral200: '#DDD8CE',
   neutral300: '#C8C2B6',
   neutral400: '#ADA89C',
   neutral500: '#8C8780',
-  neutral600: '#6B7A78',   // muted text
-  neutral700: '#3D5B58',   // secondary text
-  neutral800: '#1B3A38',   // primary text = brand color
+  neutral600: '#6B7A78',
+  neutral700: '#3D5B58',
+  neutral800: '#1B3A38',
   neutral900: '#0F2422',
 
   // Semantic
@@ -53,15 +53,15 @@ export const colors = {
   },
 
   // Backgrounds
-  backgroundMain:   '#F5F0E8',   // warm cream — page bg
-  backgroundSubtle: '#EDE8DF',   // slightly deeper cream
-  backgroundCard:   '#FFFFFF',   // pure white for cards that need contrast
+  backgroundMain:   '#F5F0E8',
+  backgroundSubtle: '#EDE8DF',
+  backgroundCard:   '#FFFFFF',
 
   // Text
   textPrimary:   '#1B3A38',
   textSecondary: '#3D5B58',
   textMuted:     '#6B7A78',
-  textOnDark:    '#F5F0E8',    // cream on dark, not harsh white
+  textOnDark:    '#F5F0E8',
   textOnPrimary: '#F5F0E8',
 };
 
